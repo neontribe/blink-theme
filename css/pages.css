@@ -1,0 +1,973 @@
+/**
+ * @file
+ * Page Styling
+ *
+ * Style the markup found in page.tpl.php. Also includes some styling of
+ * miscellaneous Drupal elements that appear in the $content variable, such as
+ * ul.links, .pager, .more-link, etc.
+ */
+
+
+/*
+ * Body
+ */
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #DAE0DA;
+  color: #0B5841;
+  font-size: 13px;
+}
+
+body a {
+  color: #0b5841;
+  font-weight: bold;
+  font-size: 13px;
+  font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif;
+}
+
+#page {
+  width: 960px;
+}
+
+/*
+ * The skip-link link will be completely hidden until a user tabs to the link.
+ * See the element-focusable rule in system.base.css.
+ */
+
+#skip-link {
+  margin: 0;
+}
+#skip-link a,
+#skip-link a:visited {
+  display: block;
+  width: 100%;
+  padding: 2px 0 3px 0;
+  text-align: center;
+  background-color: #666;
+  color: #fff;
+}
+
+/*
+ * Header
+ */
+
+#logo { /* Wrapping link for logo */
+  float: left; /* LTR */
+  margin: 0;
+  padding: 0;
+}
+#logo img {
+  vertical-align: bottom;
+}
+
+#name-and-slogan { /* Wrapper for website name and slogan */
+  background: #0C5F3A;
+  font-weight: bold;
+  margin: 100px 0 0 10px;
+}
+span#slogan {
+  color: #FFF200;
+}
+
+#site-name { /* The name of the website */
+  text-indent: -9999px; 
+  margin: 0;
+  /**font-size: 2em;
+  line-height: 1.5em; **/
+}
+
+h1#site-name {
+  line-height: 0;
+}
+
+a#site-logo-link {
+  display: block;
+  height: 100px;
+  position: absolute;
+  margin-top: -100px;
+  width: 400px;
+}
+
+#site-name a:link,
+#site-name a:visited {
+  color: #000;
+  text-decoration: none;
+}
+#site-name a:hover,
+#site-name a:focus {
+  text-decoration: underline;
+}
+
+#site-slogan { /* The slogan (or tagline) of a website */
+  margin: 0;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-family: 'Trebuchet MS', verdana, sans-serif;
+}
+
+#header {
+  clear: both; /* Clear the logo */
+  background: url('../images/header.gif') no-repeat;
+  background-color: #0C5F3A;
+  /*height: 196px;*/
+  width: 960px;
+  margin: 15px 0 0;
+}
+
+#header .menu {
+  float: right;
+  margin: 5px 0;
+}
+
+#header .region-header {
+  float: right;
+  padding: 0 10px 0 0;
+}
+
+#block-locale-language {
+  float: right;
+  margin: 0;
+  width: 100%;
+}
+
+#block-locale-language .language-switcher-locale-url {
+  padding: 0;
+  margin: 0;
+}
+
+.language-switcher-locale-url a {
+  margin: 5px 0 0 10px;
+}
+
+form#search-block-form {
+  float: right;
+}
+
+.language-switcher-locale-url li {
+  display: inline;
+}
+
+.language-link.active {
+  color: #FFF200;
+}
+
+.language-link.locale-untranslated {
+  margin-top: 6px;
+  margin-right: 4px;
+  font-weight: bold;
+  font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif;
+}
+
+.language-link {
+  color: #111;
+  float: right;
+  margin-top: 30px;
+  margin-right: 10px;
+}
+
+
+/**
+ * Social Share links
+ */
+div#widgets-element-socialmedia_share-default {
+  float: right;
+  /*padding: 40px 10px 10px 10px;*/
+  margin-top: -33px;
+}
+
+div#block-widgets-s-socialmedia-profile-default {
+  clear: both;
+  float: right;
+  margin: 6px -6px;
+}
+
+div.widgets-element-horizontal {
+  padding: 0px 4px 0px 0px;
+}
+
+#widgets-element-socialmedia_share-default {
+  padding-right: 10px;
+}
+
+#widgets-element-socialmedia_share-default #widgets-element-socialmedia_addthis-tweet {
+  margin-right: -20px;
+  padding-top: 6px;
+}
+
+#widgets-element-socialmedia_share-default #widgets-element-socialmedia_addthis-facebook-like {
+  margin-right: -8px;
+  padding-top: 6px;
+}
+
+
+#header .menu a {
+  color: #FFFFFF;
+}
+
+#block-menu-menu-topmenu li {
+  display: inline;
+  float: right;
+  padding-right: 10px;
+  padding-top: 5px;
+}
+
+#block-menu-menu-topmenu li:first-child {
+  padding-right: 0;
+}
+
+#block-menu-menu-topmenu a {
+  text-decoration: none;
+  font-size: 11px;
+}
+
+/*
+ * Main (container for everything else)
+ */
+
+#main {
+  margin: 0;
+}
+
+#top-full-width {
+  margin-top: -25px;
+}
+
+h1#page-title.title {
+  background: #014C32;
+  color: #fff;
+  font-size: 24px;
+  padding: 7px 200px 7px 20px;
+  margin: 17px 0 -10px 0;
+  font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif;
+}
+
+.page-workerstestimonies h1#page-title.title,
+.page-news h1#page-title.title {
+  margin: 17px 0 10px 0;
+}
+
+body.page-node-add h1#page-title.title {
+  background: none;
+  padding-left: 0px;
+}
+
+h2.node-title a {
+  font-size: 17px;
+  font-weight: bold;
+  text-decoration: none;
+  background: #fff;
+  padding-top: 0px;
+  padding-left: 19px;
+  margin-bottom: -35px;
+  display: block;
+}
+
+.views-field-title a {
+  font-size: 17px;
+  margin: 0;
+  text-decoration: none;
+  display: block;
+}
+
+a:hover {
+  color: #1a7d5c;
+}
+
+.view-display-id-block_5 .views-field-title {
+  margin-top: -10px;
+  padding-bottom: 10px;
+}
+
+.term-listing-heading {
+  margin-top: 30px;
+}
+
+.page-taxonomy .node {
+
+}
+
+.field-name-upload .field-items {
+  background: #fff;
+  padding: 20px; 
+}
+
+
+li.node-readmore {
+  float: right;
+  padding-top: 10px;
+}
+
+ul.tabs.primary {
+  background: #fff;
+  margin: 0px;
+  padding-top: 10px;
+}
+
+.node-teaser,
+.node {
+  background: #fff url('../images/panel_back.gif') no-repeat bottom right;
+  padding-bottom: 30px;
+}
+
+#content .field-name-field-video-url,
+#content .field-name-field-teaser-image {
+  float: left;
+}
+
+
+div.field-items {
+  padding: 5px 20px 5px;
+  line-height: 20px;
+  margin-bottom: -10px;
+  font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif;
+}
+
+/** div.field-items .media-vimeo-outer-wrapper,
+div.field-items .media-youtube-video, **/
+.field-name-field-video-url div.field-items,
+div.field-items img {
+  margin: 20px 0px 17px 0px;
+}
+
+div.field-items img.file-icon {
+  margin: 0;
+}
+
+.node-type-resource div.field-items {
+  /*margin-bottom: -80px;*/
+}
+
+.node-type-webform div.field-items {
+  background: #fff;
+  margin-bottom: -40px;
+}
+
+.webform-client-form {
+  padding: 25px 50px 0px 50px; 
+}
+
+
+a.translation-link {
+  /*margin: -42px 40px 0px 0px;*/
+  /*padding-top: 10px;*/
+  padding-right: 10px;
+  float:right;
+}
+
+div#block-addtoany-addtoany-button {
+  margin-left: 50px;
+  margin-top: 8px;
+}
+
+div#content.column {
+  margin-top: -25px;
+  background: #DAE0DA;
+}
+
+#content form input[type="submit"] {
+  color: #fff;
+  border: 0;
+  /*padding: 9px 21px;*/
+  text-transform: uppercase;
+  font-weight: bold;
+  background: #014b31;
+  cursor: pointer;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif;
+}
+
+#content form input[type="submit"]:hover {
+  color: #014b31;
+  background: #fff200;
+}
+
+div.form-textarea-wrapper {
+  /*width: 500px;*/
+}
+
+div#block-fblikebutton-fblikebutton-static-block iframe {
+    float: right;
+    background: transparent;
+    margin-right: -177px;
+}
+
+div#block-fblikebutton-fblikebutton-static-block.block {
+  margin-bottom: 0px;
+}
+
+/*
+ * Content
+ */
+
+#content {
+  background: #FFFFFF;
+  padding: 0px;
+}
+
+.region-highlighted {
+}
+
+.breadcrumb { /* The path to the current page in the form of a list of links */
+}
+.breadcrumb ol {
+  margin: 0;
+  padding: 0;
+}
+.breadcrumb li {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1.title, /*Title of a page*/
+h2.node-title, /* Title of a piece of content when it is given in a list of content */
+h2.title, /* Comment section heading */
+h2.comment-form, /* Comment form heading */ {
+  font-size: 15px;
+  font-weight: bold;
+  margin: 10px 0 20px 0;
+}
+
+h3 {
+  margin: 2px 0 0 0;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+tr.even { /* Some tables have rows marked even or odd. */
+  /* background-color: #eee; */ /* Drupal core uses a #eee background */
+}
+
+tr.odd {
+  /* background-color: #eee; */ /* Drupal core uses a #eee background */
+}
+
+div.messages { /* Important messages (status, warning, and error) for the user. See also the declarations in messages.css. */
+  margin: 35px 0; /* Drupal core uses "6px 0" margin */
+}
+div.messages ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+div.status { /* Normal priority messages */
+}
+
+div.warning,
+tr.warning { /* Medium priority messages */
+  /* border: 1px solid #f0c020; */ /* Drupal core uses: 1px solid #f0c020 */
+}
+
+div.error,
+tr.error { /* High priority messages. See also the .error declaration below. */
+}
+
+.error { /* Errors that are separate from div.messages status messages. */
+  /* color: #e55; */ /* Drupal core uses a #e55 background */
+}
+
+.warning { /* Warnings that are separate from div.messages status messages. */
+  /* color: #e09010; */ /* Drupal core uses a #e09010 background */
+}
+
+.tabs { /* See also the tabs.css file. */
+}
+
+.region-help { /* Help text on a page */
+}
+
+.more-help-link { /* Link to more help */
+}
+
+.region-content { /* Wrapper for the actual page content */
+}
+
+/* List of links as buttons */
+.page-node #content li {
+  list-style: none;
+}
+
+.page-node #content .field-items li a {
+  background: #0B5841;
+  padding: 4px;
+  color: #fff;
+  text-decoration: none;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+}
+
+.page-node #content .field-items li a:hover {
+  background: #FFF200;
+  color: #0B5841;
+}
+
+ul.inline { /* List of links generated by theme_links() */
+  display: inline;
+  padding: 0;
+}
+ul.inline li {
+  display: inline;
+  list-style-type: none;
+  padding: 0 1em 0 0; /* LTR */
+}
+
+.field-items li {
+  padding-bottom: 10px;
+}
+
+span.field-label { /* The inline field label used by the Fences module */
+  padding: 0 1em 0 0; /* LTR */
+}
+
+.item-list .pager { /* A list of page numbers when more than 1 page of content is available */
+  padding: 0;
+}
+.item-list .pager li { /* Each page number in the pager list */
+  padding: 0 0.5em;
+}
+
+.feed-icon { /* The link to the RSS or Atom feed for the current list of content */
+}
+
+.more-link { /* Aggregator, blog, and forum more link */
+}
+
+/*
+ * Content Top
+ */
+.region-content-top {
+  background: #fff url(../images/panel_back.gif) no-repeat right bottom;
+  padding: 8px;
+  margin-top: 20px;
+}
+
+.region-content-top div.views-row {
+  background: none; /* unset bg image if region-top contains a views row*/
+}
+
+/** Clearfixes **/
+.node-teaser:after,
+.region-content-top:after, 
+.region-content-top .block:after,
+.region-content-left:after,
+.region-content-left .block:after,
+.region-content-right:after,
+.region-content-right .block:after,
+.region-home-bottom-left .block:after,
+.region-home-bottom-middle .block:after,
+.views-row:after {
+  content: "";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+}
+
+
+/*
+ * Content Left
+ */
+.region-content-left {
+  display: block;
+  float: left;
+  width: 49%;
+  margin-top: 20px;
+  height: 450px;
+}
+
+.section-unionsolidarity .region-content-left {
+  height: 800px;
+}
+
+.region-content-left .block {
+  background: #fff url(../images/panel_back.gif) no-repeat right bottom;
+  padding: 8px;
+}
+
+.region-content-left .block div.views-row {
+  background: none; /* Unset bg image if region-left contains a views row. */
+  height: 240px;
+}
+
+/*Get Involved page blocks*/
+.region-content-right .block .view-display-id-block_6 div.views-row,
+.region-content-left .block .view-display-id-block_4 div.views-row,
+.region-content-left .block .view-display-id-block_2 div.views-row {
+  height: 140px;
+}
+
+/**
+ * Donate block on TU Solidarity page.
+ */
+
+#TU-donate-button {
+  display: inline-block;
+  width: 52%;
+  float: right;
+  margin-top: 70px;
+}
+
+#TU-donate-text {
+  display: inline-block;
+  width: 37%;
+  padding-left: 25px;
+}
+
+
+/*
+ * Content Right
+ */
+.region-content-right {
+  display: block;
+  float: right;
+  width: 49%;
+  margin-top: 20px;
+  height: 450px;
+}
+
+.region-content-right .block {
+  background: #fff url(../images/panel_back.gif) no-repeat right bottom;
+  padding: 8px;
+}
+
+.region-content-right .block div.views-row {
+  background: none; /* Unset bg image if region-left contains a views row. */
+  height: 240px;
+}
+
+/*
+ * Region Home Bottom Left
+ */
+.region-home-bottom-left {
+  width: 32%;
+  float: left;
+  margin-right: 18px;
+}
+
+/*
+ * Region Home Bottom middle
+ */
+.region-home-bottom-middle {
+  width: 32%;
+  float: left;
+  margin-right: 18px;
+}
+
+.region-home-bottom-middle .block {
+  background: #fff url(../images/panel_back.gif) no-repeat right bottom;
+} 
+
+/** Padding for campaign blocks - en and es **/
+.region-home-bottom-middle #block-block-23 p,
+.region-home-bottom-middle #block-block-19 p {
+  padding-right: 8px;
+  padding-left: 8px;
+  margin-top: 2px;
+}
+
+/*
+ * Region Home Bottom Right 
+ */
+.region-home-bottom-right {
+  width: 32%;
+  float: left;
+}
+
+/*
+ * First sidebar (on left in LTR languages, on right in RTL)
+ */
+
+.region-sidebar-first {
+  margin-top: -27px;
+}
+
+.region-sidebar-first a {
+  display: block;
+  text-decoration: none;
+  background: #014c32;
+  color: #fff;
+  font-size: 14px;
+  /*font-variant: small-caps;*/
+  width: 175px;
+  margin-left: -41px;
+  margin-top: 5px;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 6px;
+}
+
+.region-sidebar-first a:hover {
+  color: #014C32;
+  background: #FFF200;
+}
+
+.region-sidebar-first ul.menu {
+  list-style: none;
+}
+
+.region-sidebar-first li.expanded a {
+  color: #014C32;
+  background: #fff;
+}
+
+.region-sidebar-first li.expanded li.leaf a,
+.region-sidebar-first li.expanded li.collapsed a,
+.region-sidebar-first li.expanded li.expanded a {
+  background: #016f4a;
+  color: #fff;
+  border-left: 5px solid #014c32;
+  margin-left: -71px;
+  width: 170px;
+  font-size: 11px;
+  font-variant: normal;
+}
+
+.region-sidebar-first li.leaf a.active, 
+.region-sidebar-first li.leaf a.active-trail {
+  color: #014C32;
+  background: #fff;
+}
+
+.region-sidebar-first li.expanded li.leaf a:hover,
+.region-sidebar-first li.expanded li.expanded a:hover,
+.region-sidebar-first li.expanded li.collapsed a:hover,
+.region-sidebar-first ul.menu li.expanded ul.menu li.expanded ul.menu li.leaf a:hover {
+
+  color: #014C32;
+  background: #FFF200;
+}
+
+.region-sidebar-first li.expanded li.leaf a.active,
+.region-sidebar-first li.expanded li.expanded a.active {
+  color: #014C32;
+  background: #fff;
+}
+
+.region-sidebar-first ul.menu li.expanded ul.menu li.expanded ul.menu li.leaf a {
+  margin-left: -100px;
+  background: none repeat scroll 0 0 #1A7D5C;
+  border-left: 10px solid #016F4A;
+  color: #fff;
+  font-size: 11px;
+  width: 165px;
+}
+
+
+/*
+ * Second sidebar (on right in LTR languages, on left in RTL)
+ *
+ * Remember to NOT add padding or margin to your .region-sidebar-second
+ * (see the layout.css file.)
+ */
+
+.region-sidebar-second {
+}
+
+
+/* Custom content - a bit messy */
+span.views-field.views-field-title a {
+  font-size: 15px;
+  text-decoration: none;
+  font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif;
+  display: block;
+}
+
+span.views-field.views-field-created {
+  display: block;
+}
+
+span.views-field.views-field-view-node a {
+  display: block;
+  float: right;
+}
+
+span.views-field.views-field-field-teaser-text {
+  display: block;
+  margin-top: 13px;
+  margin-bottom: 13px;
+}
+
+div.views-row {
+  background: url('../images/panel_back.gif') no-repeat bottom right;
+  min-height: 185px;
+  margin-bottom: 25px;
+  padding: 25px 25px 25px 25px;
+}
+
+
+/*Get Involved page blocks*/
+.view-display-id-block_2 div.views-row,
+.view-display-id-block_4 div.views-row,
+.view-display-id-block_6 div.views-row {
+  min-height: 0px;
+}
+
+div.view-workers-testimonies div.views-row {
+  /*height: 38px;
+  padding: 5px 25px 35px 25px; removed to fix workerstestimony teasers*/
+}
+
+article.node-testimony div.field-name-field-featured-image {
+  float:right;
+}
+
+article.node-testimony div.field-name-field-featured-image div.field-items {
+  background: none;
+}
+
+
+div.field-items img {
+  /*clear: both;*/
+}
+
+div.views-row img {
+  float: left;
+  margin-right: 25px;
+}
+
+.front .region-home-bottom-right div.views-row img,
+.front .region-home-bottom-left div.views-row img {
+  margin-right: 8px;
+}
+
+div.view-content {
+  /*margin-top: 25px;*/
+  /*width: 960px; removed to fix bg width on list content views */
+}
+
+.front .region-home-bottom-left .view-display-id-block_1 .view-content {
+  margin-top: 20px;
+}
+
+div.view-workers-testimonies div.view-content {
+  width: 769px;
+  margin-top: 0px;
+
+}
+
+div.block div.view-workers-testimonies div.view-content {
+  width: 370px; /*Block view of testimony teaser should not be 769px*/
+}
+
+
+/*
+ * Footer
+ */
+
+#footer {
+  margin-left: -40px;
+}
+
+#footer a {
+  font-size: 11px;
+  margin: 7px;
+}
+
+#footer ul.menu {
+  text-align: center;
+}
+
+#block-menu-secondary-menu li {
+  display: inline;
+}
+
+/*
+ * Page bottom
+ */
+
+.region-bottom { /* Wrapper for any blocks placed in the page bottom region */
+}
+
+/**
+ * Admin Pages
+ */
+
+.views-displays #views-display-menu-tabs.secondary li {
+  float: left;
+  display: block;
+}
+
+/**
+ * Home Page layout
+ */
+.front .region-content-left {
+  width: 60%;
+}
+
+.front .region-content-right {
+  width: 38%;
+}
+
+.views-more-link {
+  padding: 6px 10px 6px 0px;
+  float: right;
+}
+
+.front .more-link,
+.front .views-more-link {
+  padding: 6px 10px 6px 0;
+  float: right;
+}
+
+.front .views-row {
+  min-height: 0px;
+  margin-bottom: 0px;
+}
+
+.front .region-content-right .block div.views-row {
+  padding: 8px;
+}
+
+.front .region-content-right .view-display-id-block_2 {
+  height: 197px;
+}
+
+.front .region-content-right #block-views-list-content-block-2 div.views-row {
+  padding: 0px;
+  min-height: 0px
+}
+
+.front .region-content-right #block-views-list-content-block-2 {
+  height: 200px;
+}
+
+.front .region-content-right .view-list-content .views-row {
+  margin: 0px;
+  padding: 0px;
+  height: 40px;
+}
+
+.front .region-content-right .view-list-content .views-field-title a {
+  font-size: 13px;
+  padding-top: 10px;
+  line-height: 16px;
+}
+
+/*added by neil for ie7 fixes*/
+#block-widgets-s-socialmedia-profile-default {
+float:none !important;
+text-align: right;
+}
+
+#widgets-element-socialmedia_profile-default {
+display:inline-block;
+/*ie7 hack*/
+*display:inline;
+*zoom:1;
+}
+
+#widgets-element-socialmedia_profile-default > .widgets{
+display:inline-block;
+height:32px;
+width:32px;
+/*ie7 hack*/
+*display:inline;
+*zoom:1;
+}
+

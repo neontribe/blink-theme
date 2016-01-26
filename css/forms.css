@@ -1,0 +1,245 @@
+/**
+ * @file
+ * Form Styling
+ */
+
+
+.form-item { /* Wrapper for a form element (or group of form elements) and its label */
+  margin: 1.5em 0;
+}
+
+.form-item input.error,
+.form-item textarea.error,
+.form-item select.error { /* Highlight the form elements that caused a form submission error */
+  border: 1px solid #c00;
+}
+
+.form-item label { /* The label for a form element */
+  display: block;
+  font-weight: bold;
+}
+
+.form-item label.option { /* The label for a radio button or checkbox */
+  display: inline;
+  font-weight: normal;
+}
+
+.form-required { /* The part of the label that indicates a required field */
+  color: #c00;
+}
+
+.form-item .description { /* The descriptive help text (separate from the label) */
+  font-size: 0.85em;
+}
+
+.form-checkboxes .form-item,
+.form-radios .form-item { /* Pack groups of checkboxes and radio buttons closer together */
+  margin: 0; /* Drupal core uses "0.4em 0" */
+}
+
+.form-submit { /* The submit button */
+}
+
+.container-inline div,
+.container-inline label { /* Inline labels and form divs */
+  display: inline;
+}
+
+.tips { /* Tips for Drupal's input formats */
+}
+
+a.button { /* Buttons used by contrib modules like Media */
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+}
+
+/*
+ * Password confirmation
+ */
+
+.password-parent,
+.confirm-parent {
+  margin: 0;
+}
+
+/*
+ * Search (search-block-form.tpl.php)
+ */
+
+#block-search-form { /* Wrapper for the search form */
+}
+
+/*
+ * Drupal's default login form block
+ */
+
+#user-login-form {
+  text-align: left; /* LTR */
+}
+
+/*
+ * OpenID
+ *
+ * The default styling for the OpenID login link seems to assume Garland's
+ * styling of list items.
+ */
+
+#user-login-form ul { /* OpenID creates a new ul above the login form's links. */
+  margin-bottom: 0; /* Position OpenID's ul next to the rest of the links. */
+}
+
+html.js #user-login-form li.openid-link,
+#user-login-form li.openid-link { /* The "Log in using OpenID" link. */
+  margin-top: 1.5em;
+  margin-left: -20px; /* LTR */ /* Un-do some of the padding on the ul list. */
+}
+
+#user-login-form li.user-link { /* The "Cancel OpenID login" link. */
+  margin-top: 1.5em;
+}
+
+#user-login ul {
+  margin: 1.5em 0;
+}
+
+/*
+ * Drupal admin tables
+ *
+ * We overrode these styles in normalize.css, but restore them for the admin
+ * section of the site.
+ */
+
+form th {
+  text-align: left; /* LTR */
+  padding-right: 1em; /* LTR */
+  border-bottom: 3px solid #ccc;
+}
+
+form tbody {
+  border-top: 1px solid #ccc;
+}
+
+form tr.even {
+  background-color: #fff;
+}
+
+form table .item-list ul {
+  margin: 0;
+}
+
+.lt-ie8 tr.even th,
+.lt-ie8 tr.even td,
+.lt-ie8 tr.odd th,
+.lt-ie8 tr.odd td {
+  border-bottom: 1px solid #ccc; /* IE doesn't display borders on table rows */
+}
+
+/*
+ * Drupal core wrongly puts this in system.menus.css. Since we override that, add it back.
+ */
+
+td.menu-disabled {
+  background: #ccc;
+}
+
+/*
+ * Bananalink custom Mail-chimp sign-up form
+ */
+#mc-embedded-subscribe-form {
+  display: block;
+  float: left;
+  border: solid 2px;
+  width: 35%;
+  padding: 10px;
+  margin: 20px;
+}
+
+.front .region-home-bottom-middle #mc-embedded-subscribe-form {
+  width: 80%;
+  padding-bottom: 0px;
+  font-size: 12px;
+}
+
+#mc-embedded-subscribe-form h2 {
+  font-size: 16px;
+  margin: 0px;
+  padding: 0px;
+  line-height: 1.5em;
+}
+
+#mc_embed_signup .asterisk {
+  color:#c60;
+  font-size:150%;
+}
+
+#mc_embed_signup .mc-field-group .asterisk {
+  position:absolute; 
+  top:28px; 
+  right:10px;
+}        
+
+.front .region-home-bottom-middle #mc_embed_signup h2 {
+  margin-top: -8px;
+  margin-bottom: -5px;
+}
+
+.front .region-home-bottom-middle #mc_embed_signup .indicates-required {
+  margin-bottom: -12px;
+}
+
+.front .region-home-bottom-middle #mc_embed_signup .mc-field-group {
+  padding-bottom: 0;
+}
+
+.front .region-home-bottom-middle #mc_embed_signup label {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  line-height: 1em;
+}
+
+.front .region-home-bottom-middle #mc-embedded-subscribe {
+  margin: 0 0 5px 0;
+  padding: 4px 10px;
+}
+
+#mc_embed_signup input {border: solid 2px #0B5841; -webkit-appearance:none;}
+#mc_embed_signup input:focus {border-color:#fff200;}
+#mc_embed_signup .mc-field-group input {display:block; width:100%; padding:4px 0; text-indent:2%;}
+
+
+/* MailChimp Form Embed Code - Classic - 08/17/2011 */
+
+#mc_embed_signup input[type=checkbox]{-webkit-appearance:checkbox;}
+#mc_embed_signup input[type=radio]{-webkit-appearance:radio;}
+#mc_embed_signup .small-meta {font-size: 11px;}
+#mc_embed_signup .nowrap {white-space:nowrap;}
+
+#mc_embed_signup .mc-field-group {clear:left; position:relative; width:96%; padding-bottom:3%; min-height:50px;}
+#mc_embed_signup .size1of2 {clear:none; float:left; display:inline-block; width:46%; margin-right:4%;}
+* html #mc_embed_signup .size1of2 {margin-right:2%; /* Fix for IE6 double margins. */}
+#mc_embed_signup .mc-field-group select {display:inline-block; width:99%; padding:5px 0; margin-bottom:2px;}
+
+#mc_embed_signup .datefield, #mc_embed_signup .phonefield-us{padding:5px 0;}
+#mc_embed_signup .datefield input, #mc_embed_signup .phonefield-us input{display:inline; width:60px; margin:0 2px; letter-spacing:1px; text-align:center; padding:5px 0 2px 0;}
+#mc_embed_signup .phonefield-us .phonearea input, #mc_embed_signup .phonefield-us .phonedetail1 input{width:40px;}
+#mc_embed_signup .datefield .monthfield input, #mc_embed_signup .datefield .dayfield input{width:30px;}
+#mc_embed_signup .datefield label, #mc_embed_signup .phonefield-us label{display:none;}
+
+#mc_embed_signup .indicates-required {text-align:right; font-size:11px; margin-right:4%;}
+#mc_embed_signup .clear {clear:both;}
+
+#mc_embed_signup .mc-field-group.input-group ul {margin:0; padding:5px 0; list-style:none;}
+#mc_embed_signup .mc-field-group.input-group ul li {display:block; padding:3px 0; margin:0;}
+#mc_embed_signup .mc-field-group.input-group label {display:inline;}
+#mc_embed_signup .mc-field-group.input-group input {display:inline; width:auto; border:none;}
+
+#mc_embed_signup div#mce-responses {float:left; top:-1.4em; padding:0em .5em 0em .5em; overflow:hidden; width:90%;margin: 0 5%; clear: both;}
+#mc_embed_signup div.response {margin:1em 0; padding:1em .5em .5em 0; font-weight:bold; float:left; top:-1.5em; z-index:1; width:80%;}
+#mc_embed_signup #mce-error-response {display:none;}
+#mc_embed_signup #mce-success-response {color:#529214; display:none;}
+#mc_embed_signup label.error {display:block; float:none; width:auto; margin-left:1.05em; text-align:left; padding:.5em 0;}
+
+#mc-embedded-subscribe {clear:both; width:auto; display:block; margin:1em 0 1em 5%;}
+#mc_embed_signup #num-subscribers {font-size:1.1em;}
+#mc_embed_signup #num-subscribers span {padding:.5em; border:1px solid #ccc; margin-right:.5em; font-weight:bold;}

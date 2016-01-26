@@ -1,0 +1,208 @@
+/**
+ * @file
+ * Block Styling
+ */
+
+
+.block { /* Block wrapper */
+  margin-bottom: 1.5em;
+}
+
+.block.first { /* The first block in the region */
+}
+
+.block.last { /* The last block in the region */
+}
+
+.block.odd { /* Zebra striping for each block in the region */
+}
+
+.block.even { /* Zebra striping for each block in the region */
+}
+
+
+/* Align titles vertically - not quite there yet 
+h2.block-title {
+  display: table-cell;
+  height: 48px;
+  line-height: 1em;
+  padding: 1px 12px;
+  vertical-align: middle;
+  background: 0 0 #014C32;
+  color: #FFF;
+  width: 335px;  
+} */
+
+
+h2.block-title { 
+  font-size: 16pt;
+  background: 0 0 #014C32;
+  color: #FFFFFF;
+  display: block;
+  padding: 8px 1px 1px 12px;
+  margin: 10px 0px 0px 0px;
+  line-height: 24px;
+  min-height: 48px;
+}
+
+h2.block-title.field-content a { /* Where block takes title from node. */
+  color: #fff;
+  font-size: 16pt;
+  padding: 2px 4px;
+}
+
+h2.block-title.field-content a:hover {
+ color: #fff200;
+ /* color: #014C32; */
+ /* background: #fff200; */
+}
+
+
+#block-views-featured-story-block-1 .views-field-title {
+  margin: -33px -25px 20px -26px;
+}
+
+#block-views-featured-story-block-2 .views-field-title {
+  margin: -16px -8px 10px -8px;
+}
+
+.front .region-home-bottom-left .view-display-id-block_1 .views-field-title {
+  margin: -10px -26px 10px -26px;
+}
+.front .region-home-bottom-left .view-display-id-block_3 .views-field-title { 
+  margin: -35px -26px 10px -26px;
+}
+
+.front .region-home-bottom-right #block-views-featured-story-block-3 .views-row {
+  padding-top: 0px;
+}
+
+.region-content-left h2.block-title,
+.region-content-right h2.block-title { 
+/* left and right home content block titles */
+  margin: -10px -8px 0;
+}
+
+
+/* min-height for homepage blocks */
+.front .region-home-bottom-left .block, 
+.front .region-home-bottom-middle .block,
+.front .region-home-bottom-right .block { 
+  height: 300px;
+}
+
+/*min height fir bottom middle sign-up block */
+.front .region-home-bottom-middle #block-block-20,
+.front .region-home-bottom-middle #block-block-22 {
+  height: 365px;
+}
+
+/* min-height for Featured Resources block homepage */
+.front .region-home-bottom-right .block .view-display-id-block_3 .views-row {
+  height: 283px;
+}
+
+/* padding views row where there is a block title */
+.front .region-home-bottom-left .block .view-display-id-block_3 .views-row {
+  height: 310px;
+}
+
+.front .region-home-bottom-left .block .view-display-id-block_1 .views-row {
+  padding: 0 25px 25px 25px;
+  height: 275px;
+}
+
+.front .region-home-bottom-right .block .view-display-id-block_5 .views-row {
+  height: 203px;
+}
+
+/* Mail sign up form home*/
+#mc-embedded-subscribe-form {
+  margin: 10px 20px 20px 20px !important;
+}
+
+/* Search form ie fix*/
+#block-search-form {
+  clear: both;
+}
+
+#block-aggregator-category-1 { /* Block for the latest news items in the first category */
+}
+
+#block-aggregator-feed-1 { /* Block for the latest news items in the first feed */
+}
+
+#block-block-1 { /* First block created with "Add block" link */
+}
+
+#block-blog-recent { /* "Recent blog posts" block */
+}
+
+#block-book-navigation { /* "Book navigation" block for the current book's table of contents */
+}
+
+#block-comment-recent { /* "Recent comments" block */
+}
+
+#block-forum-active { /* "Active forum topics" block */
+}
+
+#block-forum-new { /* "New forum topics" block */
+}
+
+#block-locale-language { /* Language switcher block */
+}
+
+#block-menu-menu-NAME { /* Custom menu block */
+}
+
+#block-node-recent { /* "Recent content" block */
+}
+
+#block-node-syndicate { /* "Syndicate" block for primary RSS feed; see also page.css's .feed-icon */
+}
+
+#block-poll-recent { /* "Most recent poll" block */
+}
+
+#block-profile-author-information { /* "Author information" block for the profile of the page's author */
+}
+
+#block-search-form { /* "Search form" block */
+}
+
+#block-shortcut-shortcuts { /* "Shortcuts" block */
+}
+
+#block-statistics-popular { /* "Popular content" block */
+}
+
+#block-system-main-menu { /* "Main menu" block */
+}
+
+#block-system-management { /* "Management" block for Drupal management menu */
+}
+
+#block-system-navigation { /* "Navigation" block for Drupal navigation menu */
+}
+
+#block-system-user-menu { /* "User menu" block for Drupal user menu */
+}
+
+#block-system-help { /* "System help" block */
+}
+
+#block-system-main { /* "Main page content" block */
+}
+
+#block-system-powered-by { /* "Powered by Drupal" block */
+}
+
+#block-user-login { /* "User login form" block */
+}
+
+#block-user-new { /* "Who's new" block for a list of the newest users */
+}
+
+#block-user-online { /* "Who's online" block for a list of the online users */
+}
