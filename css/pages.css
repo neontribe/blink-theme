@@ -853,6 +853,72 @@ div.block div.view-workers-testimonies div.view-content {
   width: 370px; /*Block view of testimony teaser should not be 769px*/
 }
 
+/*
+ * Call to action banner
+ */
+
+.call-to-action {
+  background: #71c47c;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  height: auto;
+  margin-top: 1em;
+  width: 700px;
+ }
+
+ .call-inner-content {
+   display: -webkit-box;
+   display: -webkit-flex;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-flex-flow: row nowrap;
+   -ms-flex-flow: row nowrap;
+   flex-flow: row nowrap;
+   padding: 2em;
+ }
+
+ .call-to-action .call-inner-content img {
+   max-width: none;
+   margin: 0;
+ }
+
+ .call-text {
+   margin-left: 15px;
+ }
+
+ .call-to-action p {
+   margin: 0;
+ }
+
+ .call-to-action h2 {
+   margin: 0;
+ }
+
+ .call-to-action h2:hover {
+    color: #024c33;
+    cursor: pointer;
+ }
+
+ .call-to-action button {
+   background: #0d5f3b;
+   border: 0;
+   border-top-left-radius: 25px;
+   border-bottom-right-radius: 25px;
+   color: #fff;
+   float:right;
+   font-weight: bold;
+   margin-top: 1em;
+   padding: 1em;
+ }
+
+ .call-to-action button:hover {
+   background: #024c33;
+ }
+
+/*
+ * Footer
+ */
+
 
 /*
  * Footer
