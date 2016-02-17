@@ -858,7 +858,11 @@ div.block div.view-workers-testimonies div.view-content {
  */
 
 .call-to-action {
-  background: #71c47c;
+  background: #71c47c; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #71c47c, #fff); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #71c47c, #fff); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #71c47c, #fff); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #71c47c, #fff); /* Standard syntax (must be last) */
   border-top-left-radius: 25px;
   border-bottom-right-radius: 25px;
   height: auto;
@@ -914,11 +918,6 @@ div.block div.view-workers-testimonies div.view-content {
  .call-to-action button:hover {
    background: #024c33;
  }
-
-/*
- * Footer
- */
-
 
 /*
  * Footer
