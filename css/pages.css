@@ -857,20 +857,30 @@ div.block div.view-workers-testimonies div.view-content {
  * Call to action banner
  */
 
+/* Hide the toilet paper */
+ .view.view-single-node-banner-link.view-id-single_node_banner_link .view-content .views-row.views-row-1.views-row-odd.views-row-first.views-row-last {
+   background: none !important;
+ }
+
 .call-to-action {
-  background: #71c47c; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left top, #71c47c, #fff); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(bottom right, #71c47c, #fff); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(bottom right, #71c47c, #fff); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to bottom right, #71c47c, #fff); /* Standard syntax (must be last) */
+  background: #0d5f3b;
   border-top-left-radius: 25px;
   border-bottom-right-radius: 25px;
   height: auto;
-  margin-top: 1em;
+  margin: 0 auto;
   width: 700px;
  }
 
+ .call-to-action:hover {
+   background: #024c33;
+ }
+
+ .call-to-action a {
+   text-decoration: none;
+ }
+
  .call-inner-content {
+   color: #fff;
    display: -webkit-box;
    display: -webkit-flex;
    display: -ms-flexbox;
@@ -879,44 +889,16 @@ div.block div.view-workers-testimonies div.view-content {
    -ms-flex-flow: row nowrap;
    flex-flow: row nowrap;
    padding: 2em;
+   text-decoration: none;
  }
 
- .call-to-action .call-inner-content img {
-   max-width: none;
-   margin: 0;
- }
-
- .call-text {
-   margin-left: 15px;
+ .call-to-action-title {
+   font-size: 2em;
  }
 
  .call-to-action p {
-   margin: 0;
- }
-
- .call-to-action h2 {
-   margin: 0;
- }
-
- .call-to-action h2:hover {
-    color: #024c33;
-    cursor: pointer;
- }
-
- .call-to-action button {
-   background: #0d5f3b;
-   border: 0;
-   border-top-left-radius: 25px;
-   border-bottom-right-radius: 25px;
-   color: #fdf100;
-   float:right;
-   font-weight: bold;
    margin-top: 1em;
-   padding: 1em;
- }
-
- .call-to-action button:hover {
-   background: #024c33;
+   font-size: 1.5em;
  }
 
 /*
