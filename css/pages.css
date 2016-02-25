@@ -576,11 +576,11 @@ span.field-label { /* The inline field label used by the Fences module */
   float: left;
   width: 49%;
   margin-top: 20px;
-  height: 450px;
+  min-height: 450px;
 }
 
 .section-unionsolidarity .region-content-left {
-  height: 800px;
+  /*height: 800px;*/
 }
 
 .region-content-left .block {
@@ -626,7 +626,7 @@ span.field-label { /* The inline field label used by the Fences module */
   float: right;
   width: 49%;
   margin-top: 20px;
-  height: 450px;
+  min-height: 450px;
 }
 
 .region-content-right .block {
