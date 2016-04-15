@@ -945,8 +945,13 @@ div.block div.view-workers-testimonies div.view-content {
 /**
  * Home Page layout
  */
+.front .top-content {
+  display: block;
+  overflow: hidden;
+}
+
 .front .region-content-left {
-  width: 60%;
+   width: 60%
 }
 
 .front .region-content-right {
