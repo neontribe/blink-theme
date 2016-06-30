@@ -20,6 +20,12 @@
 }
 
 .node .submitted { /* The "posted by" information */
+  font-weight: 700;
+  text-align: right;
+}
+
+.node p.submitted {
+  margin: 1.5em 1.5em 0 0;
 }
 
 .node .content { /* Node's content wrapper */
