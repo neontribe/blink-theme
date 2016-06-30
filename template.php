@@ -14,5 +14,5 @@
 function bananalink_preprocess_node(&$variables, $hook) {
   // Change the submitted value to date only. By default includes Author and time as well.
   // To enable on a content type, alter the Display Settings for it.
-  $variables['submitted'] = format_date(time($variables['date']), 'custom', 'd.m.Y');
+  $variables['submitted'] = format_date($variables['created'], 'custom', 'd.m.Y');
 }
