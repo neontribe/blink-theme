@@ -487,7 +487,7 @@ tr.error { /* High priority messages. See also the .error declaration below. */
 
 /* List of links as buttons */
 .page-node #content li {
-  list-style: none;
+  list-style: outside;
 }
 
 .page-node #content .field-items li a {
@@ -661,7 +661,8 @@ span.field-label { /* The inline field label used by the Fences module */
   background: #fff url(../images/panel_back.gif) no-repeat right bottom;
 } 
 
-/** Padding for campaign blocks - en and es **/
+/** Padding for sign up and campaign blocks - en and es **/
+.region-home-bottom-middle #block-block-20 p,
 .region-home-bottom-middle #block-block-23 p,
 .region-home-bottom-middle #block-block-19 p {
   padding-right: 8px;
