@@ -243,3 +243,8 @@ td.menu-disabled {
 #mc-embedded-subscribe {clear:both; width:auto; display:block; margin:1em 0 1em 5%;}
 #mc_embed_signup #num-subscribers {font-size:1.1em;}
 #mc_embed_signup #num-subscribers span {padding:.5em; border:1px solid #ccc; margin-right:.5em; font-weight:bold;}
+
+/* CKE_EDITOR */
+.cke_skin_kama .cke_editor textarea.cke_source {
+  white-space: pre-wrap;
+}
